@@ -154,6 +154,8 @@ h5 {
 }
 
 /* Your code starts here! */
+
+/*  Fix the width of the viewport */
 html,
 body {
   max-width: 100%;
@@ -309,6 +311,10 @@ button {
 @media (max-width: 800px) {
   body {
     margin: 0 20px 0 20px;
+  }
+
+  .middle-img {
+    max-width: 100%;
   }
 
   /* .tablet-logo {
