@@ -311,7 +311,7 @@ button {
   }
 
   .tablet-logo img {
-    width: 100px;
+    width: 150px;
   }
 
   .code-snippet {
@@ -336,10 +336,25 @@ button {
     color: inherit;
   }
 
+  .hero {
+    margin: 10px 20px 50px 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 40px;
+  }
+
   .tagline {
     text-align: center;
-    font-size: 30px;
-    width: 25%;
+    font-size: 50px;
+    width: 50%;
+    margin: auto;
+  }
+
+  button {
+    border: 1px solid black;
+    font-size: 14px;
+    width: 100%;
+    padding: 5px;
+    background-color: white;
   }
 
   .middle-img {
