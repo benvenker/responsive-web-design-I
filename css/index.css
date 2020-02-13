@@ -307,6 +307,46 @@ button {
 }
 */
 
+@media (min-width: 1024px) {
+  body {
+    margin: 0 50px 0 50px;
+  }
+
+  .header-logo * {
+    display: none;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    flex-grow: 1;
+    color: lightgray;
+  }
+
+  .container {
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .hero ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero li {
+    flex-grow: 1;
+  }
+}
+
 /* Support for Phone widths */
 @media (max-width: 800px) {
   body {
@@ -316,10 +356,6 @@ button {
   .middle-img {
     max-width: 100%;
   }
-
-  /* .tablet-logo {
-    display: none;
-  } */
 
   .header-logo {
     display: none;
