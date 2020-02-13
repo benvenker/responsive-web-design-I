@@ -305,9 +305,14 @@ button {
 }
 */
 
-@media (min-width: 320px) {
+/* Support for Phone widths */
+@media (max-width: 800px) {
   body {
     margin: 0 20px 0 20px;
+  }
+
+  .header-logo {
+    display: none;
   }
   .logo.last {
     display: none;
@@ -385,5 +390,56 @@ button {
   .copyright {
     text-align: center;
     margin: 20px;
+  }
+}
+
+/* Support for table widths */
+@media (min-width: 768px) {
+  .header-logo {
+    margin: 10px;
+    display: inline;
+  }
+  nav {
+    text-align: center;
+  }
+  nav ul {
+    display: flex;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 10px;
+  }
+
+  .tablet-logo img {
+    display: none;
+  }
+
+  .hero {
+    padding-bottom: 0;
+  }
+
+  .tagline {
+    margin: 50px auto;
+    width: 25%;
+    font-size: 3.5em;
+    text-align: center;
+  }
+
+  button {
+    width: 70%;
+  }
+
+  .features ul {
+    display: flex;
+  }
+
+  .features ul li {
+    margin: 10px;
+  }
+
+  .features p {
+    width: 100%;
   }
 }
