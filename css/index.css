@@ -154,10 +154,18 @@ h5 {
 }
 
 /* Your code starts here! */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: auto;
+}
 
 /* .tablet-logo {
   display: none;
 } */
+
+/*
 .container {
   width: 850px;
   margin: 100px 100px;
@@ -165,7 +173,6 @@ h5 {
 
 .nav {
   text-align: left;
-  /* overflow: hidden; */
   position: fixed;
   top: 0;
   width: 100%;
@@ -198,8 +205,7 @@ a:hover {
 
 .tagline {
   text-align: center;
-  margin-left: 40px;
-  margin-bottom: 100px;
+  margin-left: 0;
 }
 
 .tagline h1 {
@@ -256,7 +262,7 @@ button {
 
 @media (max-width: 768px) {
   .container {
-    /* smax-width: 600px; */
+    /* smax-width: 600px; 
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -270,7 +276,7 @@ button {
   }
   .nav {
     /* display: block; */
-    /* top: 100px; */
+/* top: 100px; 
     position: relative;
     background-color: white;
   }
@@ -283,7 +289,7 @@ button {
   }
   .hero {
     text-align: center;
-    /* margin-top: 400px; */
+    /* margin-top: 400px;
   }
   .code-snippet img {
     display: none;
@@ -297,32 +303,47 @@ button {
     max-width: 100%;
   }
 }
+*/
 
-@media (max-width: 500px) {
-  .container {
-    margin: 15px;
-    display: flex;
-    width: 375px;
-  }
-
+@media (min-width: 375px) {
   .last {
     display: none;
   }
 
-  .tagline h1 {
-    font-size: 50px;
+  .tablet-logo img {
+    width: 100px;
+  }
+
+  .code-snippet {
+    display: none;
+  }
+
+  nav {
     text-align: center;
-    width: 50%;
-    margin-left: 25px;
   }
 
-  .features p,
-  .services ul li p {
-    width: 300px;
-    padding: 0;
+  nav ul {
+    color: lightgray;
   }
 
-  .services li {
-    margin: 20px 0;
+  nav ul li {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .tagline {
+    text-align: center;
+    font-size: 30px;
+    width: 25%;
+  }
+
+  .middle-img {
+    max-width: 100%;
+    padding: 20px;
   }
 }
