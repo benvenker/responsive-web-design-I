@@ -431,6 +431,10 @@ button {
     width: 70%;
   }
 
+  .features {
+    margin-top: 30px;
+  }
+
   .features ul {
     display: flex;
   }
