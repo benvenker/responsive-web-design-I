@@ -306,14 +306,14 @@ button {
 */
 
 /* Support for Phone widths */
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   body {
     margin: 0 20px 0 20px;
   }
 
-  .tablet-logo {
+  /* .tablet-logo {
     display: none;
-  }
+  } */
 
   .header-logo {
     display: none;
