@@ -313,13 +313,18 @@ button {
   .tagline h1 {
     font-size: 50px;
     text-align: center;
-    margin: auto;
     width: 50%;
+    margin-left: 25px;
   }
 
   .features p,
   .services ul li p {
     width: 300px;
+    padding: 0;
+  }
+
+  .services li {
+    margin: 20px 0;
   }
   /* .container {
     margin: auto;
