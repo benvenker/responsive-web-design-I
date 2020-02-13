@@ -163,150 +163,6 @@ body {
   margin: auto;
 }
 
-/* .tablet-logo {
-  display: none;
-} */
-
-/*
-.container {
-  width: 850px;
-  margin: 100px 100px;
-}
-
-.nav {
-  text-align: left;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: gray;
-}
-
-.nav li {
-  display: inline-block;
-  margin: 2%;
-  color: lightgray;
-}
-
-a {
-  text-decoration: none;
-  color: lightgray;
-}
-
-a:hover {
-  color: white;
-}
-
-.logo {
-  text-align: right;
-  margin-left: 100px;
-}
-
-.hero li {
-  display: inline-block;
-}
-
-.tagline {
-  text-align: center;
-  margin-left: 0;
-}
-
-.tagline h1 {
-  font-size: 80px;
-}
-
-.code-snippet {
-  margin: 20px 0 50px 50px;
-}
-
-button {
-  background-color: white;
-  border: 1px solid black;
-  width: 200px;
-  height: 35px;
-  font-size: 18px;
-}
-
-.features li {
-  display: inline-block;
-  margin-top: 30px;
-  width: 400px;
-}
-
-.features p {
-  margin: 10px 0 40px 0;
-  max-width: 400px;
-}
-
-.first {
-  margin-left: 0;
-  margin-right: 30px;
-}
-
-.middle-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.services li {
-  display: inline-block;
-  width: 250px;
-  margin: 30px 0 30px 20px;
-}
-
-.contact {
-  margin: 50px 0 20px 0;
-}
-
-.copyright {
-  margin-top: 50px;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .container {
-    /* smax-width: 600px; 
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .tablet-logo {
-    display: block;
-  }
-
-  .logo.last img {
-    display: none;
-  }
-  .nav {
-    /* display: block; */
-/* top: 100px; 
-    position: relative;
-    background-color: white;
-  }
-
-  .nav ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-  }
-  .hero {
-    text-align: center;
-    /* margin-top: 400px;
-  }
-  .code-snippet img {
-    display: none;
-  }
-
-  .services ul {
-    max-width: 100%;
-  }
-
-  .services ul li {
-    max-width: 100%;
-  }
-}
-*/
-
 @media (min-width: 1024px) {
   body {
     margin: 0 80px 0 50px;
@@ -324,15 +180,25 @@ button {
     display: flex;
   }
 
+  li.logo-item {
+    margin-top: 0;
+  }
+
   nav ul li {
     flex-grow: 1;
     color: lightgray;
     text-align: right;
+    bottom: 0;
+    height: 50px;
   }
 
   a {
     text-decoration: none;
     color: inherit;
+  }
+
+  .hero {
+    /* border: 1px solid red; */
   }
   .hero ul {
     display: flex;
@@ -343,24 +209,52 @@ button {
   .hero li {
     flex-grow: 1;
     text-align: end;
+    /* border: 1px solid red; */
+  }
+
+  li.tagline {
+    flex-grow: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 150px;
   }
 
   .tagline h1 {
-    width: 2%;
-    align-content: center;
+    text-align: center;
+    font-size: 70px;
+    /* border: 1px solid blue; */
+    width: 60%;
   }
 
-  button {
+  .tagline button {
     border: 1px solid black;
     font-size: 14px;
-    width: 350px;
+    width: 40%;
     padding: 5px;
     background-color: white;
+    text-align: center;
+    margin-left: 40px;
   }
 
   .features {
     border-top: 2px solid black;
     padding: 20px 0 20px 0;
+  }
+
+  .services {
+    border-bottom: 2px solid black;
+    margin: 0 0 30px 0;
+  }
+
+  address li {
+    margin-top: 20px;
+  }
+
+  .copyright {
+    margin-top: 30px;
+    text-align: center;
   }
 }
 
