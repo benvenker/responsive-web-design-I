@@ -306,7 +306,7 @@ button {
 */
 
 /* Support for Phone widths */
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   body {
     margin: 0 20px 0 20px;
   }
@@ -365,10 +365,6 @@ button {
     background-color: white;
   }
 
-  .middle-img {
-    max-width: 100%;
-  }
-
   .services {
     padding-bottom: 30px;
     border-bottom: 2px solid black;
@@ -394,13 +390,14 @@ button {
 }
 
 /* Support for table widths */
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   .header-logo {
-    margin: 10px;
+    margin: 30px 0;
     display: inline;
   }
   nav {
     text-align: center;
+    margin-top: 30px;
   }
   nav ul {
     display: flex;
