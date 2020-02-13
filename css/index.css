@@ -306,7 +306,10 @@ button {
 */
 
 @media (min-width: 375px) {
-  .last {
+  body {
+    margin: 0 20px 0 20px;
+  }
+  .logo.last {
     display: none;
   }
 
@@ -337,7 +340,7 @@ button {
   }
 
   .hero {
-    margin: 10px 20px 50px 20px;
+    /* margin: 10px 20px 50px 20px; */
     border-bottom: 2px solid black;
     padding-bottom: 40px;
   }
@@ -359,6 +362,15 @@ button {
 
   .middle-img {
     max-width: 100%;
-    padding: 20px;
+  }
+
+  .services {
+    padding-bottom: 30px;
+    border-bottom: 2px solid black;
+  }
+
+  .features li,
+  .services li {
+    margin: 30px 0 30px 0;
   }
 }
