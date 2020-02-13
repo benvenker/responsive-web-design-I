@@ -311,6 +311,10 @@ button {
     margin: 0 20px 0 20px;
   }
 
+  .tablet-logo {
+    display: none;
+  }
+
   .header-logo {
     display: none;
   }
@@ -337,6 +341,7 @@ button {
   nav ul li {
     padding: 10px;
     font-size: 14px;
+    flex-grow: 1;
   }
 
   a {
