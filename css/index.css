@@ -442,4 +442,12 @@ button {
   .features p {
     width: 100%;
   }
+
+  .services ul {
+    display: flex;
+  }
+
+  .services li {
+    margin: 30px 20px 20px 0;
+  }
 }
