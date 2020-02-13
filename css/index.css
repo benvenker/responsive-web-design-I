@@ -254,9 +254,9 @@ button {
   text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .container {
-    max-width: 600px;
+    /* smax-width: 600px; */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -265,6 +265,9 @@ button {
     display: block;
   }
 
+  .logo.last img {
+    display: none;
+  }
   .nav {
     /* display: block; */
     /* top: 100px; */
@@ -286,10 +289,6 @@ button {
     display: none;
   }
 
-  .logo.last img {
-    display: none;
-  }
-
   .services ul {
     max-width: 100%;
   }
@@ -303,7 +302,7 @@ button {
   .container {
     margin: 15px;
     display: flex;
-    width: 350px;
+    width: 375px;
   }
 
   .last {
@@ -326,32 +325,4 @@ button {
   .services li {
     margin: 20px 0;
   }
-  /* .container {
-    margin: auto;
-    max-width: 375px;
-  }
-  .nav {
-    text-align: center;
-  }
-
-  .last {
-    display: none;
-  }
-
-  .tagline {
-    margin: 0;
-    font-size: 30px;
-  }
-
-  .tagline h1 {
-    font-size: 50px;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-  }
-
-  .features p,
-  .features h5 {
-    margin-left: 10px;
-  } */
 }
