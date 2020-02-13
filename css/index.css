@@ -309,7 +309,7 @@ button {
 
 @media (min-width: 1024px) {
   body {
-    margin: 0 50px 0 50px;
+    margin: 0 80px 0 50px;
   }
 
   .header-logo * {
@@ -327,23 +327,40 @@ button {
   nav ul li {
     flex-grow: 1;
     color: lightgray;
-  }
-
-  .container {
+    text-align: right;
   }
 
   a {
     text-decoration: none;
     color: inherit;
   }
-
   .hero ul {
     display: flex;
     justify-content: space-between;
+    margin: 50px 0 50px 0;
   }
 
   .hero li {
     flex-grow: 1;
+    text-align: end;
+  }
+
+  .tagline h1 {
+    width: 2%;
+    align-content: center;
+  }
+
+  button {
+    border: 1px solid black;
+    font-size: 14px;
+    width: 350px;
+    padding: 5px;
+    background-color: white;
+  }
+
+  .features {
+    border-top: 2px solid black;
+    padding: 20px 0 20px 0;
   }
 }
 
