@@ -215,4 +215,15 @@ body {
   .code-snippet {
     display: none;
   }
+
+  .features li,
+  .services li {
+    margin-top: 50px;
+  }
+
+  .middle-img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 50px;
+  }
 }
