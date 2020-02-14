@@ -192,7 +192,7 @@ body {
   }
 
   .container {
-    margin: 20px;
+    margin: 15px;
   }
 
   .hero {
@@ -202,7 +202,7 @@ body {
   .tagline {
     margin-top: 30px;
     text-align: center;
-    font-size: 50px;
+    font-size: 65px;
   }
 
   button {
@@ -219,11 +219,31 @@ body {
   .features li,
   .services li {
     margin-top: 50px;
+    font-size: 14px;
   }
 
   .middle-img {
     max-width: 100%;
     max-height: 100%;
     margin-top: 50px;
+  }
+
+  .services {
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+  }
+
+  .contact {
+    padding: 30px 0;
+    font-size: 14px;
+  }
+
+  address ul li {
+    margin-top: 15px;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 14px;
   }
 }
