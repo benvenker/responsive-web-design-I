@@ -396,6 +396,7 @@ body .copyright {
   body body {
     margin: auto;
     max-width: 960px;
+    padding: 30px;
   }
   html nav,
   body nav {
@@ -448,6 +449,10 @@ body .copyright {
   body .middle-img {
     margin: auto;
     width: 100%;
+  }
+  html .middle-img:hover,
+  body .middle-img:hover {
+    border: 5px solid blue;
   }
   html .services,
   body .services {
