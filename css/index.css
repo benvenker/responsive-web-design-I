@@ -1,10 +1,8 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -129,20 +127,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
 html,
 body {
   height: 100%;
   font-family: "Roboto", sans-serif;
 }
-
 h1,
 h2,
 h3,
@@ -152,9 +147,7 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
-
 /* Your code starts here! */
-
 /*  Fix the width of the viewport */
 html,
 body {
@@ -162,287 +155,295 @@ body {
   overflow-x: hidden;
   margin: 0;
   /* max-widths: 880px; */
+  /* Support for phone widths */
 }
-
-a {
+html a,
+body a {
   color: inherit;
   text-decoration: none;
 }
-
-/* Support for phone widths */
 @media (max-width: 500px) {
-  /* Hide superfluous logo images */
-  .header-logo,
-  .logo {
+  html,
+  body {
+    /* Hide superfluous logo images */
+  }
+  html .header-logo,
+  body .header-logo,
+  html .logo,
+  body .logo {
     display: none;
   }
-
-  nav {
+  html nav,
+  body nav {
     text-align: center;
     margin: 0;
   }
-
-  nav ul {
+  html nav ul,
+  body nav ul {
     display: flex;
     flex-direction: column;
   }
-
-  .tablet-logo {
+  html .tablet-logo,
+  body .tablet-logo {
     padding: 10px 0;
   }
-
-  .tablet-logo img {
+  html .tablet-logo img,
+  body .tablet-logo img {
     width: 150px;
   }
-
-  .nav-item {
+  html .nav-item,
+  body .nav-item {
     color: lightgray;
     padding: 15px;
     border: 1px solid lightgray;
   }
-
-  .container {
+  html .container,
+  body .container {
     margin: 15px;
   }
-
-  .hero {
+  html .hero,
+  body .hero {
     padding-bottom: 60px;
     border-bottom: 2px solid black;
   }
-  .tagline {
+  html .tagline,
+  body .tagline {
     margin-top: 30px;
     font-size: 65px;
     text-align: center;
   }
-
-  .code-snippet {
+  html .code-snippet,
+  body .code-snippet {
     display: none;
   }
-
-  button {
+  html button,
+  body button {
     font-size: 14px;
     padding: 4px 33px;
     border: 1px solid black;
     background-color: white;
   }
-
-  .features li,
-  .services li {
+  html .features li,
+  body .features li,
+  html .services li,
+  body .services li {
     margin-top: 50px;
     font-size: 14px;
   }
-
-  .middle-img {
+  html .middle-img,
+  body .middle-img {
     max-width: 100%;
     max-height: 100%;
     margin-top: 50px;
   }
-
-  .services {
+  html .services,
+  body .services {
     border-bottom: 2px solid black;
     padding-bottom: 30px;
   }
-
-  li.service-item {
+  html li.service-item,
+  body li.service-item {
     margin-top: 20px;
   }
-
-  .contact {
+  html .contact,
+  body .contact {
     padding: 30px 0;
     font-size: 14px;
   }
-
-  address ul li {
+  html address ul li,
+  body address ul li {
     margin-top: 15px;
   }
-
-  .copyright {
+  html .copyright,
+  body .copyright {
     text-align: center;
     font-size: 14px;
   }
 }
-
 @media (max-width: 800px) and (min-width: 501px) {
-  .tablet-logo {
+  html .tablet-logo,
+  body .tablet-logo {
     display: none;
   }
-
-  .header-logo {
+  html .header-logo,
+  body .header-logo {
     margin: 30px;
     padding: 30px;
     text-align: center;
   }
-
-  .container {
+  html .container,
+  body .container {
     margin: 30px;
   }
-
-  nav {
+  html nav,
+  body nav {
     margin: 30px;
   }
-
-  nav ul {
+  html nav ul,
+  body nav ul {
     display: flex;
   }
-
-  nav ul li {
+  html nav ul li,
+  body nav ul li {
     flex-grow: 1;
     color: lightgray;
   }
-
-  .logo-item {
+  html .logo-item,
+  body .logo-item {
     display: none;
   }
-
-  .hero {
+  html .hero,
+  body .hero {
     border-bottom: 2px solid black;
     padding-bottom: 60px;
   }
-
-  .tagline {
+  html .tagline,
+  body .tagline {
     margin-top: 50px;
     text-align: center;
     font-size: 80px;
   }
-
-  button {
+  html button,
+  body button {
     font-size: 14px;
     padding: 4px 33px;
     border: 1px solid black;
     background-color: white;
   }
-
-  .code-snippet {
+  html .code-snippet,
+  body .code-snippet {
     display: none;
   }
-
-  .features {
+  html .features,
+  body .features {
     padding: 20px 0;
   }
-
-  .features ul {
+  html .features ul,
+  body .features ul {
     display: flex;
   }
-
-  .features li {
+  html .features li,
+  body .features li {
     margin: 10px 0;
   }
-
-  .middle-img {
+  html .middle-img,
+  body .middle-img {
     max-width: 100%;
     max-height: 100%;
   }
-
-  .services ul {
+  html .services ul,
+  body .services ul {
     display: flex;
   }
-
-  .services li {
+  html .services li,
+  body .services li {
     padding-right: 20px;
     margin-top: 30px;
   }
-
-  .services {
+  html .services,
+  body .services {
     border-bottom: 2px solid black;
     padding-bottom: 30px;
   }
-
-  .contact {
+  html .contact,
+  body .contact {
     padding: 30px 0;
     font-size: 14px;
   }
-
-  address ul li {
+  html address ul li,
+  body address ul li {
     margin-top: 15px;
   }
-
-  .copyright {
+  html .copyright,
+  body .copyright {
     text-align: center;
     font-size: 14px;
   }
 }
-
 @media (min-width: 801px) {
-  .header-logo,
-  .tablet-logo {
+  html .header-logo,
+  body .header-logo,
+  html .tablet-logo,
+  body .tablet-logo {
     display: none;
   }
-
-  body {
+  html body,
+  body body {
     margin: auto;
     max-width: 960px;
   }
-
-  nav {
+  html nav,
+  body nav {
     margin-top: 30px;
   }
-  nav ul {
+  html nav ul,
+  body nav ul {
     display: flex;
   }
-
-  nav ul li {
+  html nav ul li,
+  body nav ul li {
     flex-grow: 2;
     color: lightgray;
   }
-
-  .hero {
+  html .hero,
+  body .hero {
     margin: 50px 0;
   }
-
-  .hero ul {
+  html .hero ul,
+  body .hero ul {
     display: flex;
   }
-
-  .hero ul li {
+  html .hero ul li,
+  body .hero ul li {
     flex-grow: 1;
   }
-
-  .tagline {
+  html .tagline,
+  body .tagline {
     margin-top: 30px;
     font-size: 65px;
     text-align: center;
   }
-
-  button {
+  html button,
+  body button {
     font-size: 14px;
     padding: 4px 33px;
     border: 1px solid black;
     background-color: white;
   }
-
-  .features {
+  html .features,
+  body .features {
     border-top: 2px solid black;
     padding: 20px 0;
   }
-
-  .features ul {
+  html .features ul,
+  body .features ul {
     display: flex;
   }
-
-  .services {
+  html .services,
+  body .services {
     border-bottom: 2px solid black;
     padding-bottom: 20px;
   }
-
-  .services ul {
+  html .services ul,
+  body .services ul {
     display: flex;
     margin-top: 20px;
   }
-
-  .services ul li {
+  html .services ul li,
+  body .services ul li {
     padding-right: 10px;
   }
-
-  .contact {
+  html .contact,
+  body .contact {
     padding: 30px 0;
     font-size: 14px;
   }
-
-  address ul li {
+  html address ul li,
+  body address ul li {
     margin-top: 15px;
   }
-
-  .copyright {
+  html .copyright,
+  body .copyright {
     text-align: center;
     font-size: 14px;
   }
