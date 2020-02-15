@@ -148,6 +148,16 @@ h5 {
   margin-bottom: 15px;
 }
 /* Your code starts here! */
+.button {
+  font-size: 14px;
+  padding: 4px 33px;
+  border: 1px solid black;
+  background-color: white;
+}
+.copyright {
+  text-align: center;
+  font-size: 14px;
+}
 /*  Fix the width of the viewport */
 html,
 body {
@@ -159,8 +169,23 @@ body {
 }
 html a,
 body a {
-  color: inherit;
+  color: lightgray;
   text-decoration: none;
+}
+html a:hover,
+body a:hover {
+  color: black;
+}
+@media (max-width: 500px) {
+  html a:hover,
+  body a:hover {
+    color: red;
+  }
+}
+html .copyright,
+body .copyright {
+  text-align: center;
+  font-size: 14px;
 }
 @media (max-width: 500px) {
   html,
@@ -419,6 +444,11 @@ body a {
   body .features ul {
     display: flex;
   }
+  html .middle-img,
+  body .middle-img {
+    margin: auto;
+    width: 100%;
+  }
   html .services,
   body .services {
     border-bottom: 2px solid black;
@@ -441,10 +471,5 @@ body a {
   html address ul li,
   body address ul li {
     margin-top: 15px;
-  }
-  html .copyright,
-  body .copyright {
-    text-align: center;
-    font-size: 14px;
   }
 }
