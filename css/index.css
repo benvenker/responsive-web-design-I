@@ -1,3 +1,480 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
-
-
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+/* Your code starts here! */
+.button {
+  font-size: 14px;
+  padding: 4px 33px;
+  border: 1px solid black;
+  background-color: white;
+}
+.copyright {
+  text-align: center;
+  font-size: 14px;
+}
+/*  Fix the width of the viewport */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  /* max-widths: 880px; */
+  /* Support for phone widths */
+}
+html a,
+body a {
+  color: lightgray;
+  text-decoration: none;
+}
+html a:hover,
+body a:hover {
+  color: black;
+}
+@media (max-width: 500px) {
+  html a:hover,
+  body a:hover {
+    color: red;
+  }
+}
+html .copyright,
+body .copyright {
+  text-align: center;
+  font-size: 14px;
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    /* Hide superfluous logo images */
+  }
+  html .header-logo,
+  body .header-logo,
+  html .logo,
+  body .logo {
+    display: none;
+  }
+  html nav,
+  body nav {
+    text-align: center;
+    margin: 0;
+  }
+  html nav ul,
+  body nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  html .tablet-logo,
+  body .tablet-logo {
+    padding: 10px 0;
+  }
+  html .tablet-logo img,
+  body .tablet-logo img {
+    width: 150px;
+  }
+  html .nav-item,
+  body .nav-item {
+    color: lightgray;
+    padding: 15px;
+    border: 1px solid lightgray;
+  }
+  html .container,
+  body .container {
+    margin: 15px;
+  }
+  html .hero,
+  body .hero {
+    padding-bottom: 60px;
+    border-bottom: 2px solid black;
+  }
+  html .tagline,
+  body .tagline {
+    margin-top: 30px;
+    font-size: 65px;
+    text-align: center;
+  }
+  html .code-snippet,
+  body .code-snippet {
+    display: none;
+  }
+  html button,
+  body button {
+    font-size: 14px;
+    padding: 4px 33px;
+    border: 1px solid black;
+    background-color: white;
+  }
+  html .features li,
+  body .features li,
+  html .services li,
+  body .services li {
+    margin-top: 50px;
+    font-size: 14px;
+  }
+  html .middle-img,
+  body .middle-img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 50px;
+  }
+  html .services,
+  body .services {
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+  }
+  html li.service-item,
+  body li.service-item {
+    margin-top: 20px;
+  }
+  html .contact,
+  body .contact {
+    padding: 30px 0;
+    font-size: 14px;
+  }
+  html address ul li,
+  body address ul li {
+    margin-top: 15px;
+  }
+  html .copyright,
+  body .copyright {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+@media (max-width: 800px) and (min-width: 501px) {
+  html .tablet-logo,
+  body .tablet-logo {
+    display: none;
+  }
+  html .header-logo,
+  body .header-logo {
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+  }
+  html .container,
+  body .container {
+    margin: 30px;
+  }
+  html nav,
+  body nav {
+    margin: 30px;
+  }
+  html nav ul,
+  body nav ul {
+    display: flex;
+  }
+  html nav ul li,
+  body nav ul li {
+    flex-grow: 1;
+    color: lightgray;
+  }
+  html .logo-item,
+  body .logo-item {
+    display: none;
+  }
+  html .hero,
+  body .hero {
+    border-bottom: 2px solid black;
+    padding-bottom: 60px;
+  }
+  html .tagline,
+  body .tagline {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 80px;
+  }
+  html button,
+  body button {
+    font-size: 14px;
+    padding: 4px 33px;
+    border: 1px solid black;
+    background-color: white;
+  }
+  html .code-snippet,
+  body .code-snippet {
+    display: none;
+  }
+  html .features,
+  body .features {
+    padding: 20px 0;
+  }
+  html .features ul,
+  body .features ul {
+    display: flex;
+  }
+  html .features li,
+  body .features li {
+    margin: 10px 0;
+  }
+  html .middle-img,
+  body .middle-img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  html .services ul,
+  body .services ul {
+    display: flex;
+  }
+  html .services li,
+  body .services li {
+    padding-right: 20px;
+    margin-top: 30px;
+  }
+  html .services,
+  body .services {
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+  }
+  html .contact,
+  body .contact {
+    padding: 30px 0;
+    font-size: 14px;
+  }
+  html address ul li,
+  body address ul li {
+    margin-top: 15px;
+  }
+  html .copyright,
+  body .copyright {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+@media (min-width: 801px) {
+  html .header-logo,
+  body .header-logo,
+  html .tablet-logo,
+  body .tablet-logo {
+    display: none;
+  }
+  html body,
+  body body {
+    margin: auto;
+    max-width: 960px;
+    padding: 30px;
+  }
+  html nav,
+  body nav {
+    margin-top: 30px;
+  }
+  html nav ul,
+  body nav ul {
+    display: flex;
+  }
+  html nav ul li,
+  body nav ul li {
+    flex-grow: 2;
+    color: lightgray;
+  }
+  html .hero,
+  body .hero {
+    margin: 50px 0;
+  }
+  html .hero ul,
+  body .hero ul {
+    display: flex;
+  }
+  html .hero ul li,
+  body .hero ul li {
+    flex-grow: 1;
+  }
+  html .tagline,
+  body .tagline {
+    margin-top: 30px;
+    font-size: 65px;
+    text-align: center;
+  }
+  html button,
+  body button {
+    font-size: 14px;
+    padding: 4px 33px;
+    border: 1px solid black;
+    background-color: white;
+  }
+  html .features,
+  body .features {
+    border-top: 2px solid black;
+    padding: 20px 0;
+  }
+  html .features ul,
+  body .features ul {
+    display: flex;
+  }
+  html .middle-img,
+  body .middle-img {
+    margin: auto;
+    width: 100%;
+  }
+  html .middle-img:hover,
+  body .middle-img:hover {
+    border: 5px solid blue;
+  }
+  html .services,
+  body .services {
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+  }
+  html .services ul,
+  body .services ul {
+    display: flex;
+    margin-top: 20px;
+  }
+  html .services ul li,
+  body .services ul li {
+    padding-right: 10px;
+  }
+  html .contact,
+  body .contact {
+    padding: 30px 0;
+    font-size: 14px;
+  }
+  html address ul li,
+  body address ul li {
+    margin-top: 15px;
+  }
+}
